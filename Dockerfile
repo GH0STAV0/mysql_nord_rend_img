@@ -2,6 +2,6 @@
 # https://hub.docker.com/r/mysql/mysql-server/tags/
 FROM mysql/mysql-server:8.0.24
 
-COPY db_api.sql /docker-entrypoint-initdb.d/
+COPY config/db_api.sql /docker-entrypoint-initdb.d/
 COPY config/user.cnf /etc/mysql/my.cnf
 
